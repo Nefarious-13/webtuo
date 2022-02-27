@@ -3,7 +3,7 @@ import { useWeb3React } from '@web3-react/core';
 import { useEffect, useState } from 'react';
 import { /*mintGift,*/ mintPublic, mintWhitelist, sampleNFT } from '@pages/utils/_web3';
 import MintNFTCard from './mint-nft-card';
-import useSWR from 'swr';
+import useSWR from 'swr';open
 import Web3 from 'web3';
 import { Container } from '@mui/material';
 import styles from '../../styles/Home.module.css';
