@@ -17,7 +17,7 @@ const CLAIMABLE = 2;
 
 const MintNFT = () => {
   const web3 = new Web3(Web3.givenProvider)
-
+nmn
   const fetcher = (url) => fetch(url).then((res) => res.json());
   const { active, account, chainId } = useWeb3React();
 
