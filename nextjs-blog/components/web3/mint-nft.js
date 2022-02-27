@@ -17,7 +17,7 @@ const CLAIMABLE = 2;
 
 const MintNFT = () => {
   const web3 = new Web3(Web3.givenProvider)
-gbn
+
   const fetcher = (url) => fetch(url).then((res) => res.json());
   const { active, account, chainId } = useWeb3React();
 
@@ -132,12 +132,29 @@ gbn
 
   return (
     <>
+    <h1>Mint an NFT</h1>
+      <Stack id="demo">
+      
+      <Grid container spacing={17} justifyContent="left" alignItems="left" >
     
-      <h1>Mint an NFT</h1>
-      <Grid container spacing={3}  direction="row" justifyContent="left" alignItems="left">
-        
+        <Grid item   >
+          
+          <Card sx={{ width: 500 }}>
 
-       <Grid item lg={5} zeroMinWidth>
+          <CardContent>
+            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            
+            </Typography>
+            <Image alt="sample NFT" src={profilePic} width={500} height={500}/>
+            
+          </CardContent>
+          </Card>
+          
+        </Grid>
+
+       <Grid item >
+         
+         
             <MintNFTCard
               title={'Public Mint'}
               description={'Open to everyone'}
@@ -151,7 +168,7 @@ gbn
             />
           </Grid> 
       </Grid>
-      
+      </Stack>
     </>
   );
 }

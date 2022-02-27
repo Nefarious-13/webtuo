@@ -27,7 +27,7 @@ const MintNFTCard = ({title, description,amount,total, action, canMint, showNumT
       </CardContent>
       <CardActions style={{justifyContent: 'center'}}>
         {showNumToMint &&
-         <Input onChange={handleChange} defaultValue={2} type="number" label="number to mint" min = "0" inputProps={{ min: "1", max: "2", step: "1" }}
+         <Input onChange={handleChange} defaultValue={2} type="number" label="number to mint" min = "0" inputProps={{ min: "1", max: "2", step: "1" } }
          sx={{mx: 3}}
        />}
       
