@@ -30,7 +30,7 @@ export default function Home() {
             </p>
           </Grid>
         </p>
-         {/*<GetStarted />*/}<MintNFT />
+         <MintNFT />
        
         
       </main>
